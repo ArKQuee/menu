@@ -73,7 +73,7 @@ app.put("/menu/:id", async (req, res) => {
     }
 });
 
-// DELETE a menu item
+
 app.delete("/menu/:id", async (req, res) => {
     try {
         const deletedItem = await MenuItem.findByIdAndDelete(req.params.id);
